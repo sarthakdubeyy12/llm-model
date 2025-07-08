@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+
+body {
+  margin: 0;
+  background: #111111;
+  color: #f3f3f3;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.rf-controls__button {
+  box-shadow: 0 0 0 0 #00ff99;
+  transition: box-shadow 0.18s, background 0.18s, transform 0.15s;
+}
+.rf-controls__button:hover {
+  background: linear-gradient(135deg, rgba(0,255,153,0.10) 0%, rgba(0,255,153,0.18) 100%);
+  box-shadow: 0 0 12px 2px #00ff99, 0 0 0 2px #00ff9933;
+  color: #00ff99;
+  border-color: #00ff99;
+  transform: scale(1.08);
+}
+.rf-controls__button:active {
+  box-shadow: 0 0 18px 4px #00ff99, 0 0 0 2px #00ff9955;
+  background: linear-gradient(135deg, rgba(0,255,153,0.18) 0%, rgba(0,255,153,0.28) 100%);
+  transform: scale(0.97);
+}
+.rf-controls__button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #00ff9999, 0 0 12px 2px #00ff99;
+}
+
+.proflow-controls-enhanced button {
+  background: #101312;
+  color: #fff !important;
+  border: 1.5px solid #00ff99;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: box-shadow 0.2s, border 0.15s, color 0.15s, background 0.15s;
+}
+.proflow-controls-enhanced button svg {
+  color: #fff !important;
+  fill: #fff !important;
+}
+.proflow-controls-enhanced button:hover,
+.proflow-controls-enhanced button:focus {
+  background: #18201a;
+  color: #fff !important;
+  border: 2px solid #00ff99;
+}
+.proflow-controls-enhanced button:active {
+  background: #0a0d0b;
+  color: #fff !important;
+  border: 2px solid #00ff99;
+}
